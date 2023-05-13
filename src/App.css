@@ -1,0 +1,88 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800;1000&family=Roboto:wght@300&display=swap');
+
+*{
+    font-family: 'Roboto';
+    scroll-behavior: smooth;
+}
+input.form-control{
+    font-size: 14px;
+}
+
+body{
+    background: #F5F5F5;
+}
+
+input.form-control:active{
+    box-shadow: none;
+    border: none;
+}
+
+input.form-control:focus{
+    box-shadow: none;
+}
+
+.plant-info{
+    width: 100%;
+    background: #005A6F;
+    padding: 4px;
+    color: white;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+.bg-mang{
+    background: linear-gradient(180deg, #005A6F 0%, #00718C 75%, #01809E 100%);
+}
+
+section.mang-head{
+    width: 60%;
+}
+.mang-head h4{
+    font-family: 'Nunito';
+    font-size: 36px;
+    color: #015E74;
+    font-weight: bold;
+}
+.mang-head h4:nth-of-type(2){
+    font-weight: 200;
+    font-size: 30px;
+}
+.mang-head h5{
+    font-family: 'Nunito';
+    font-size: 27px;
+    color: #015E74;
+}
+.dash{
+    border: 1px solid #DFDFDF;
+    width: 100%;
+    height: 0px;
+}
+.footer-mang{
+    width: 100%;
+    color: white;
+    min-height: 50vh;
+    background: linear-gradient(180deg, #005A6F 0%, #00718C 75%, #01809E 100%);
+    padding-top: 12px;
+}
+
+.button-top-scrool{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 100;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+    transform: translateY(30px);
+    text-align: center;
+    padding: 12px;
+    outline: none;
+    border: none;
+    border-radius: 100%;
+    background-color: orange;
+    color: white;
+}
+
+.button-top-scrool.actived{
+    opacity: 1;
+    transform: translateY(0px);
+}
