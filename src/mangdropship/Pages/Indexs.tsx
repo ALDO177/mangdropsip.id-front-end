@@ -12,14 +12,14 @@ export default class Indexs extends React.Component<any>{
     render(): React.ReactNode {
         return (
            <Container className="mt-3">
-                <Row className="row-cols row-cols-sm-2">
-                    <Col className="col-lg-7 col-sm-7">
+                <section className="d-flex gap-1">
+                    <div style={{ width: '60%' }}>
                         <MegaBannerSliders/>
-                    </Col>
-                    <Col className="col-lg-5 col-sm-1">
-                       <ChildBanner/>
-                    </Col>
-                </Row>
+                    </div>
+                    <div style={{ width: '40%' }}>
+                        <ChildBanner/>
+                    </div>
+                </section>
            </Container>
         )
     }

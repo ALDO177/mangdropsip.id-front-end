@@ -17,6 +17,7 @@ export default class ChildBanner extends React.Component{
                     arrows: false,
                     pagination: false,
                     autoWidth: true,
+                    autoHeight: true
                 });
             })
         })();
@@ -25,17 +26,17 @@ export default class ChildBanner extends React.Component{
     render(): React.ReactNode {
         return (
             <>
-                <section className="splides" aria-label="Splide Basic HTML Example" style={{padding: '0px'}}>
+                <section className="splides" aria-label="Splide Banner 1">
                     <div className="splide__track">
                         <ul className="splide__list">
-                            <li className="splide__slide"><img src={banner} alt="Image 1"/></li>
+                            <li className="splide__slide"><img src={banner} alt="Banner 1"/></li>
                         </ul>
                     </div>
                 </section>
-                <section className="splides mt-2" aria-label="Splide Basic HTML Example" style={{padding: '0px'}}>
+                <section className="splides mt-1" aria-label="Splide Banner 2">
                     <div className="splide__track">
                         <ul className="splide__list">
-                            <li className="splide__slide"><img src={banner} alt="Image 1"/></li>
+                            <li className="splide__slide"><img src={banner} alt="Banner 2"/></li>
                         </ul>
                     </div>
                 </section>

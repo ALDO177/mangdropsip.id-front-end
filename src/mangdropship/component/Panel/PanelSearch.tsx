@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const AnimatePanel = {
   show:{
     opacity: 1,
-    width: '720px',
+    width: '615px',
     x:0
   },
   hidde:{
@@ -26,7 +26,7 @@ export default class PanelSearh extends React.Component{
          <motion.div transition={{duration: 0.4}} initial={"hidde"} animate={"show"} variants={AnimatePanel}>
             <InputGroup>
                 <Form.Control 
-                  size="lg" 
+                  size="sm" 
                   type="search" 
                   placeholder="Cari Produk"/>
                 <InputGroup.Text><Icons.BsSearch/></InputGroup.Text>
