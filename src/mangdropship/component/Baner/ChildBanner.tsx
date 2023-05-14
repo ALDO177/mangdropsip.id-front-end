@@ -17,7 +17,7 @@ export default class ChildBanner extends React.Component{
                     arrows: false,
                     pagination: false,
                     autoWidth: true,
-                    autoHeight: true
+                    // autoHeight: true
                 });
             })
         })();
@@ -29,14 +29,14 @@ export default class ChildBanner extends React.Component{
                 <section className="splides" aria-label="Splide Banner 1">
                     <div className="splide__track">
                         <ul className="splide__list">
-                            <li className="splide__slide"><img src={banner} alt="Banner 1"/></li>
+                            <li className="splide__slide"><img src={banner} width={'350px'} height={'106px'} alt="Banner 1"/></li>
                         </ul>
                     </div>
                 </section>
                 <section className="splides mt-1" aria-label="Splide Banner 2">
                     <div className="splide__track">
                         <ul className="splide__list">
-                            <li className="splide__slide"><img src={banner} alt="Banner 2"/></li>
+                            <li className="splide__slide"><img src={banner} width={'350px'} height={'106px'} alt="Banner 2"/></li>
                         </ul>
                     </div>
                 </section>
