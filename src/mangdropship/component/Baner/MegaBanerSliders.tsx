@@ -18,8 +18,8 @@ export default class MegaBannerSliders extends React.Component<any>{
                 arrows: false,
                 type: 'loop',
                 pagination: false,
-                padding: 0,
                 autoWidth: true,
+                autoHeight: true,
                 perPage:1,
                 autoplay: true,
                 interval: 5000,
@@ -29,10 +29,12 @@ export default class MegaBannerSliders extends React.Component<any>{
 
     render(): React.ReactNode {
         return (
-            <section className="splide" aria-label="Splide Basic HTML Example" style={{padding: '0px'}}>
+            <section className="splide"
+                aria-label="Splide Basic HTML Example"
+                style={{padding: '0px'}}>
                 <div className="splide__track">
                     <ul className="splide__list">
-                        <li className="splide__slide"><img src={banner} width={'100%'} alt="" /></li>
+                        <li className="splide__slide"><img src={banner} alt="" /></li>
                         <li className="splide__slide"><img src={banner} alt="" /></li>
                     </ul>
                 </div>
