@@ -46,7 +46,7 @@ export default function(){
                  variants={ AnimateRoute }>
                 <Outlet/>
             </motion.div>
-            {/* <Footer/> */}
+            <Footer/>
         </>
     )
 }

@@ -1,7 +1,15 @@
 
-import { Splide } from '@splidejs/splide';
+import {Splide, SplideTrack, SplideSlide} from '@splidejs/react-splide';
 import React from 'react';
 import banner from '../../../assets/banner3.png';
+import banner4 from '../../../assets/banner4.png';
+
+const OptionsSlideChildBanner = {
+    rewind: true,
+    padding: 0,
+    arrows: false,
+    pagination: false
+}
 
 export default class ChildBanner extends React.Component{
 
@@ -9,37 +17,30 @@ export default class ChildBanner extends React.Component{
         super(props);
     }
 
-    componentDidMount(): void {
-        (async() =>{
-            const splides = document.querySelectorAll('.splides');
-            splides.forEach((element) => {
-                new Splide(element.className, {
-                    arrows: false,
-                    pagination: false,
-                    autoWidth: true,
-                    // autoHeight: true
-                });
-            })
-        })();
-    }
-
     render(): React.ReactNode {
         return (
             <>
-                <section className="splides" aria-label="Splide Banner 1">
-                    <div className="splide__track">
-                        <ul className="splide__list">
-                            <li className="splide__slide"><img src={banner} width={'350px'} height={'106px'} alt="Banner 1"/></li>
-                        </ul>
-                    </div>
-                </section>
-                <section className="splides mt-1" aria-label="Splide Banner 2">
-                    <div className="splide__track">
-                        <ul className="splide__list">
-                            <li className="splide__slide"><img src={banner} width={'350px'} height={'106px'} alt="Banner 2"/></li>
-                        </ul>
-                    </div>
-                </section>
+                <Splide 
+                    hasTrack={ false }
+                    options={ OptionsSlideChildBanner }
+                    style={{padding: '0px'}}>
+                    <SplideTrack> 
+                        <SplideSlide style={{padding: '0px'}}>
+                            <img src={banner}  height={'115px'} alt="Banner 1"/>
+                        </SplideSlide>
+                    </SplideTrack>
+                </Splide>
+                <Splide 
+                    hasTrack={ false } 
+                    options={ OptionsSlideChildBanner }
+                    style={{padding: '0px'}} 
+                    className="mt-1">
+                    <SplideTrack > 
+                        <SplideSlide>
+                            <img src={banner4}  height={'115px'} alt="Banner 2"/>
+                        </SplideSlide>
+                    </SplideTrack>
+                </Splide>
             </>
         )
     }

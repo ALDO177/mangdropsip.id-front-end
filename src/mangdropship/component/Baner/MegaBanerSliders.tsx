@@ -19,12 +19,13 @@ export default class MegaBannerSliders extends React.Component<any>{
                 type: 'loop',
                 pagination: false,
                 autoWidth: true,
-                autoHeight: true,
+                autoHeight: false,
                 perPage:1,
+                width: '100%',
                 autoplay: true,
                 interval: 5000,
             }).mount();
-        })()
+        })();
     }
 
     render(): React.ReactNode {
@@ -34,8 +35,8 @@ export default class MegaBannerSliders extends React.Component<any>{
                 style={{padding: '0px'}}>
                 <div className="splide__track">
                     <ul className="splide__list">
-                        <li className="splide__slide"><img src={banner} alt="" /></li>
-                        <li className="splide__slide"><img src={banner} alt="" /></li>
+                        <li className="splide__slide"><img src={banner} height={'234px'} alt="" /></li>
+                        <li className="splide__slide"><img src={banner} height={'234px'} alt="" /></li>
                     </ul>
                 </div>
             </section>

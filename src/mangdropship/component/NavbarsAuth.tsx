@@ -3,7 +3,7 @@ import { Navbar, Container,Button } from 'react-bootstrap'
 import Plant from "./Plant";
 import logo from '../../assets/logo-mang.png';
 import * as Icons from 'react-icons/bs';
-import { Location, NavLink, To } from "react-router-dom";
+import { Link, Location, NavLink, To } from "react-router-dom";
 import PanelSearch from "./Panel/PanelSearch";
 
 interface Props{
@@ -30,7 +30,7 @@ export default class NavbarsAuth extends React.Component<Props>{
 
     protected ButtonActionControl(props: PropsButtonAction) : JSX.Element | any{
        return (
-          <NavLink
+          <Link
               to={props.to}
               style={{backgroundColor: '#00B2DD', width: '200px'}}
               className="btn btn-sm fw-bold text-white border-0 text-decoration-none">
@@ -38,7 +38,7 @@ export default class NavbarsAuth extends React.Component<Props>{
                   <Icons.BsFillHousesFill className="align-self-center" color={'white'} size={'15px'}/>
                   <span>{props?.children}</span>
               </div>
-          </NavLink>
+          </Link>
        )
     }
 

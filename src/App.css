@@ -9,8 +9,27 @@ input.form-control{
     font-size: 14px;
 }
 
+.bg-section-puls{
+    background: #F97C22;
+    color: white;
+}
+.bg-category-section{
+    background: #01809E1F;
+}
 body{
     background: #F5F5F5;
+}
+.banner-head{
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+    width: 100%;
+}
+.banner-head .megabanner{
+    min-width: 755px;
+}
+.banner-head .child-banner{
+    min-width: auto;
 }
 
 input.form-control:active{
