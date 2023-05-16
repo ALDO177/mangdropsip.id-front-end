@@ -1,95 +1,57 @@
+'use client'
 import Image from 'next/image'
-import styles from './page.module.css'
+import React from 'react'
+import { Container, Row, Col, Card } from 'react-bootstrap';
+import MegaBannerSliders from '../Home/MegaBannerSliders';
+import ChildBanner from '@/Home/ChildBanner';
+import pulsa from '../assets/pulsa.png';
+import SlidersCategorySection from '@/Home/SlidersCategorySection';
+import BrandProduk from '@/component/BrandProduk';
+import BrandProdukBanner from '@/component/BrandProdukBanner';
+import BannerAdvertisment from '@/component/Banner/BannerAdvertisment';
+import SelectionProduks from '@/component/SelectionProduk';
 
-export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+export default class Home extends React.Component{   
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+  public constructor(props: any){
+      super(props)
+  }
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+  render(): React.ReactNode {
+    return (
+      <Container className='mt-3 mb-3'>
+          <section className="banner-head">
+              <div className="megabanner">
+                  <MegaBannerSliders/>
+              </div>
+              <div className="child-banner">
+                  <ChildBanner/>
+              </div>
+          </section>
+          <Row className="row-cols row-cols-md-2 row-cols-lg-2 g-1 mt-3">
+              <Col className="col-lg-2">
+                  <Card className="w-100 border-0 shadow-sm bg-section-puls">
+                      <Card.Body className="d-flex align-items-center justify-content-center" style={{height: '122px'}}>
+                          <div className="d-block">
+                              <Image src={pulsa} className="d-block mx-auto" alt="" />
+                              <div>Pulsa dan Tagihan</div>
+                          </div>
+                      </Card.Body>
+                  </Card>
+              </Col>
+              <Col className="col-lg-10">
+                  <Card className="w-100 border-0 shadow-sm bg-category-section" style={{height: '122px'}}>
+                      <Card.Body>
+                          <SlidersCategorySection/>
+                      </Card.Body>
+                  </Card>
+              </Col>
+          </Row>
+          <BrandProduk/>
+          <BrandProdukBanner/>
+          <BannerAdvertisment/>
+          <SelectionProduks/>
+      </Container>
+    )
+  }
 }
