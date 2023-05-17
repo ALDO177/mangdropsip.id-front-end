@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 const AnimatePanel = {
   show:{
     opacity: 1,
-    width: '615px',
+    width: '70%',
     x:0
   },
   hidde:{
@@ -30,7 +30,7 @@ export default class PanelSearch extends React.Component{
             variants={AnimatePanel}>
             <InputGroup>
                 <Form.Control 
-                  size="lg" 
+                  size="sm" 
                   type="search" 
                   placeholder="Cari Produk"/>
                 <InputGroup.Text><Icons.BsSearch/></InputGroup.Text>

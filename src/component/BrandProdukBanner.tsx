@@ -7,6 +7,7 @@ import { Splide, SplideTrack, SplideSlide } from '@splidejs/react-splide';
 import { ProduksFromDatabases } from "../Arrays/Produk";
 import CardProduk from "./CardProduk";
 import Image from "next/image";
+import badeg_prd from '../assets/produk-id-badge 1.png';
 
 const BrandProduksBannersOptions = {
     perPage: 5,
@@ -52,7 +53,15 @@ export default class BrandProdukBanner extends React.Component<any>{
                                             return 1;
                                         }).map((produks) => (
                                             <SplideSlide key={produks.id}>
-                                                <CardProduk produk_info={produks}/>
+                                                <CardProduk width="197" produk_info={produks} badge={{
+                                                    flash_sale:{
+                                                        conditions: true,
+                                                        data:{
+                                                            path: badeg_prd,
+                                                            position: 'bottoms'
+                                                        }
+                                                    }
+                                                }}/>
                                             </SplideSlide>
                                         ))
                                     }
