@@ -7,13 +7,13 @@ import { Card } from "react-bootstrap";
 import Image from "next/image";
 const OptionsSliderCategory = {
     type: 'loop',
-    perPage: 7,
+    perPage: 6,
     autoplay: true,
     interval: 2000,
     perMove: 1,
     autoHeight: true,
     rewind: true,
-    gap: '3rem',
+    gap: '2rem',
     arrows: false,
     pagination: false
 }

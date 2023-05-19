@@ -37,6 +37,7 @@ export interface VariantCardProduk{
     width ?: string,
     komisi?: boolean,
     badge ?: BadgeIdUmkm,
+    border?: string,
     produk_info?: ProduksVariant
 }
 

@@ -12,7 +12,7 @@ export default class VariantProduk extends React.Component{
         return(
             <>
                 <div className='variant'>
-                    <span>Pilih Warna</span>
+                    <p>Pilih Warna</p>
                     <div className="d-flex gap-3 mt-2">
                         {
                             Array.from({length: 4}).map((val, idx) => (
@@ -22,7 +22,7 @@ export default class VariantProduk extends React.Component{
                     </div>
                 </div>
                 <div className='variant mt-4'>
-                    <span>Pilih Ukuran</span>
+                    <p>Pilih Ukuran</p>
                     <div className="d-flex gap-3 mt-2">
                         {
                             Array.from({length: 3}).map((val, idx) => (

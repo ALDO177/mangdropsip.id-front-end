@@ -21,8 +21,8 @@ export default class DetailProdukInfo extends React.Component{
                     [Tasya Farasya Approved] SKINTIFIC - Mugwort Mask Acne Clay Mask 55g Pore Clarifying Mud Mask Wash Off Pack Masker Wajah Facial Mask
                 </div>
                 <div className='mang-price mt-4'>
-                    <strong className='mt-4'>Rp 20000</strong>
-                    <h1>Rp18.000</h1>
+                    <p className='mt-3' style={{fontSize: '14px'}}>Rp 20000</p>
+                    <h1 className='mt-2'>Rp18.000</h1>
                 </div>
                 <hr />
                 <VariantProduk/>

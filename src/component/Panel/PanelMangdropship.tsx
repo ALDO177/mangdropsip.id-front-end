@@ -9,10 +9,10 @@ export default function PanelMangdropship(){
             <div>
                 <Image src={logos} width={250} alt="" />
             </div>
-            <div className="align-self-center">
+            <div className="align-self-center" style={{ fontFamily: 'Roboto' }}>
                 <h4>Mangdropship</h4>
-                <h4>Platflrom Dropship Terlengkap</h4>
-                <h5>dan Terpercaya di Indonesia</h5>
+                <h4 style={{fontWeight: '700'}}>Platflrom Dropship Terlengkap</h4>
+                <h5 style={{fontWeight: '500'}}>dan Terpercaya di Indonesia</h5>
             </div>
         </section>
     )

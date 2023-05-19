@@ -43,7 +43,7 @@ export default class Pages extends React.Component<SlughProps>{
                         <Card className="slides-info-img border-0 shadow-m text-black-50">
                             <Card.Header className="bg-white color-mang">Detail Pembelian</Card.Header>
                             <Card.Body style={{padding: '0px'}}>
-                                <Container fluid className="mt-3">
+                                <Container fluid className="mt-3 fs-mang">
                                     <div className="d-flex gap-4">
                                         <InputGroup style={{width: '140px'}}>
                                             <InputGroup.Text>-</InputGroup.Text>
@@ -51,7 +51,7 @@ export default class Pages extends React.Component<SlughProps>{
                                             <InputGroup.Text>+</InputGroup.Text>
                                         </InputGroup>
                                         <div className="align-self-center">
-                                            <strong>Stock: <strong className="color-mang">20</strong></strong>
+                                            <p className="fs-mang">Stock: <span className="color-mang">20</span></p>
                                         </div>
                                     </div>
                                     <div className="d-flex justify-content-between mt-4">
@@ -68,30 +68,30 @@ export default class Pages extends React.Component<SlughProps>{
                                         <div className="d-flex gap-3">
                                             <div className="d-flex gap-2">
                                                 <Icons.BsChatLeftTextFill className="align-self-center" size={'14px'}/>
-                                                <span className="fnt align-self-center">Chat Penjual</span>
+                                                <p className="fnt align-self-center">Chat Penjual</p>
                                             </div>
                                             <div className="d-flex gap-2">
                                                 <Icons.BsShareFill className="align-self-center" size={'14px'}/>
-                                                <span className="fnt align-self-center">Share</span>
+                                                <p className="fnt align-self-center">Share</p>
                                             </div>
                                             <div className="d-flex gap-2">
                                                 <Icons.BsFillHeartFill className="align-self-center" size={'14px'}/>
-                                                <span className="fnt align-self-center">Watchlist</span>
+                                                <p className="fnt align-self-center">Watchlist</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <Container fluid className="mt-3">
-                                    <span>Ditawarkan Oleh</span>
+                                <Container fluid className="mt-3 mb-3 fs-mang">
+                                    <p>Ditawarkan Oleh</p>
                                     <div className="d-flex gap-3 mt-3">
-                                        <div style={{borderRadius: '100%', padding: '12px', backgroundColor:'#D9D9D9'}}>
-                                            <Icons.BsShop size={'22px'} className="mang-color"/>
+                                        <div style={{borderRadius: '100%', padding: '9px 12px 12px 12px', backgroundColor:'#D9D9D9'}}>
+                                            <Icons.BsShop size={'27px'} className="mang-color"/>
                                         </div>
                                         <div className="d-block align-self-center w-100">
-                                            <div>Fajar Mutiara Group</div>
+                                            <p className="fw-500 color-mang">Fajar Mutiara Group</p>
                                             <div>
-                                                <div className="float-start" style={{fontSize: '12px'}}>Kota Gresik</div>
-                                                <div className="float-end" style={{fontSize: '12px'}}>Akrif <strong>2 Hari Lalu</strong></div>
+                                                <p className="float-start" style={{fontSize: '12px'}}>Kota Gresik</p>
+                                                <p className="float-end"   style={{fontSize: '12px'}}>Akrif <span className="fw-bold">2 Hari Lalu</span></p>
                                             </div>
                                         </div>
                                     </div>

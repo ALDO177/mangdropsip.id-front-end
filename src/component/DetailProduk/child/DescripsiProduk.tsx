@@ -6,8 +6,8 @@ export default class DescripsiProduk extends React.Component{
     public render(): React.ReactNode {
         return(
             <>
-                <span>Deskripsi Produk</span>
-                <div>
+                <p className='fs-mang'>Deskripsi Produk</p>
+                <div className='fs-mang mt-2'>
                     <div>
                         Bawang goreng khas brebes.Di jamin kriuk dan gurih, berat netto 160-170 gram.
                         Cocok untuk tambahan makanan di rumah atau pun pedagang kuliner     

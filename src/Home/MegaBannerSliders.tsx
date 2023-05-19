@@ -15,18 +15,21 @@ export default class MegaBannerSliders extends React.Component<any>{
         return (
             <Splide hasTrack={false} style={{padding: '0px'}} 
                 options={{
+                    autoplay: true,
+                    type: 'loop',
                     arrows: false,
                     rewind: true,
-                    type: 'loop',
                     pagination: false,
                     autoWidth: true,
                     autoHeight: false,
                     perPage:1,
-                    width: '100%',
-                    autoplay: true,
+                    perMove: 1,
                     interval: 5000,
                 }}>
                 <SplideTrack>
+                    <SplideSlide>
+                        <Image src={banner} height={234} alt="asoasjfif"/>
+                    </SplideSlide>
                     <SplideSlide>
                         <Image src={banner} height={234} alt="asoasjfif"/>
                     </SplideSlide>

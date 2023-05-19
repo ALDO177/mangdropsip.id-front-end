@@ -1,10 +1,19 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800;1000&family=Roboto:wght@300&display=swap');
+@font-face {
+    font-family: 'Roboto';
+    src: url('../assets/font/Roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('../assets/font/Nunito_Sans/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf');
+}
 
 body{
     font-family: 'Roboto';
     scroll-behavior: smooth;
 }
+
 input.form-control{
     font-size: 14px;
 }
@@ -12,6 +21,11 @@ input.form-control{
 a{
     text-decoration: none;
     color: #00718C;
+}
+
+p{
+    margin-bottom: unset;
+    font-size: 13px;
 }
 
 .bg-section-puls{
@@ -49,10 +63,10 @@ input.form-control:focus{
 .plant-info{
     width: 100%;
     background: #005A6F;
-    padding: 4px;
+    padding-top: 10px;
     color: white;
     font-size: 12px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
 }
 .bg-mang{
     background: linear-gradient(180deg, #005A6F 0%, #00718C 75%, #01809E 100%);
@@ -62,19 +76,21 @@ section.mang-head{
     width: 60%;
 }
 .mang-head h4{
-    font-family: 'Nunito';
+    font-family: 'Nunito Sans';
     font-size: 36px;
     color: #015E74;
-    font-weight: bold;
+    font-weight:800;
 }
 .mang-head h4:nth-of-type(2){
     font-weight: 200;
     font-size: 30px;
 }
 .mang-head h5{
-    font-family: 'Nunito';
     font-size: 27px;
     color: #015E74;
+}
+.fs-mang{
+    font-size: 12px;
 }
 .dash{
     border: 1px solid #DFDFDF;
@@ -212,7 +228,7 @@ hr{
 }
 .color-mang{
     color: #00718C;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
 }
 .action-draft{
@@ -273,4 +289,21 @@ hr{
 }
 .content .fnt{
     font-size: 13px;
+}
+.mang-price p{
+    text-decoration: line-through;
+    color: red;
+}
+.mang-price h1{
+    font-weight: 700;
+}
+.btn-outline-info{
+    font-size: 14px;
+}
+.btn-outline-info:hover{
+    color: white;
+}
+
+.border-1{
+    border: 0.5px solid #E1E1E1;
 }

@@ -30,7 +30,7 @@ export default class PanelSearch extends React.Component{
             variants={AnimatePanel}>
             <InputGroup>
                 <Form.Control 
-                  size="sm" 
+                  size="lg" 
                   type="search" 
                   placeholder="Cari Produk"/>
                 <InputGroup.Text><Icons.BsSearch/></InputGroup.Text>

@@ -36,11 +36,8 @@ export default class Page extends React.Component<Props>{
            <Link
                href={props.to}
                style={{backgroundColor: '#00B2DD', width: '200px'}}
-               className="btn btn-sm fw-bold text-white border-0 text-decoration-none">
-               <div className="d-flex gap-2 justify-content-center">
-                   <Icons.BsFillHousesFill className="align-self-center" color={'white'} size={'15px'}/>
-                   <span>{props?.children}</span>
-               </div>
+               className="btn btn-lg rounded-0 text-white border-0 text-decoration-none">
+               <p>{props?.children}</p>
            </Link>
         )
      }
@@ -63,9 +60,9 @@ export default class Page extends React.Component<Props>{
                return <>
                     <PanelSearh/>
                     <this.ButtonActionControl to={'/auth/login'}>
-                      Masuk Atau Daftar
+                      Masuk / Daftar
                     </this.ButtonActionControl>
-                    <div className="align-self-center"><Icons.BsCart2 size={'22px'}/></div>
+                    <p className="align-self-center text-white"><Icons.BsCart2 size={'22px'}/></p>
                </>
         }
      }
@@ -74,11 +71,11 @@ export default class Page extends React.Component<Props>{
         return(
             <>
                 <Plant/>
-                <Navbar className="bg-mang" expand="lg" sticky="top">
+                <Navbar className="bg-mang" expand="lg" sticky="top" style={{height: '78px'}}>
                     <Container>
                         <Navbar.Brand href="#home"><Image src={ logo } width={188} alt='fasfasf'/></Navbar.Brand>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end gap-3">
+                        <Navbar.Collapse id="basic-navbar-nav" className="d-flex justify-content-end gap-3">
                             <this.ControlPanelSearch/>
                         </Navbar.Collapse>
                     </Container>

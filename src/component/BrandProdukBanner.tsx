@@ -31,10 +31,10 @@ export default class BrandProdukBanner extends React.Component<any>{
     render(): React.ReactNode {
         return (
             <Card className="w-100 mt-3 border-0 shadow-sm text-white">
-                <Card.Header className="bg-danger">
-                    <div className="d-flex justify-content-between">
-                        <h6>PRODUK INDONESIA</h6>
-                        <div style={{fontSize: '14px'}}>Lihat Semua</div>
+                <Card.Header className="bg-danger border-0">
+                    <div className="d-flex justify-content-between align-items-center" style={{height: '30px'}}>
+                        <p className="fs-6 fw-bold">PRODUK INDONESIA</p>
+                        <p style={{fontSize: '14px'}}>Lihat Semua</p>
                     </div>
                 </Card.Header>
                 <Card.Body style={{height: '292px'}}>
@@ -53,7 +53,7 @@ export default class BrandProdukBanner extends React.Component<any>{
                                             return 1;
                                         }).map((produks) => (
                                             <SplideSlide key={produks.id}>
-                                                <CardProduk width="197" produk_info={produks} badge={{
+                                                <CardProduk border="rounded-0" width="197" produk_info={produks} badge={{
                                                     flash_sale:{
                                                         conditions: true,
                                                         data:{

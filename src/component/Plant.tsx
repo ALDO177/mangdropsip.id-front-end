@@ -28,7 +28,7 @@ export default class Plant extends React.Component{
                         <div className="d-flex gap-3">
                                 <A_Icons to="#">
                                     <>
-                                        <A_Icons.Icons><Icons.FaVihara size={'15px'}/></A_Icons.Icons>
+                                        <A_Icons.Icons><Icons.FaHouseUser size={'15px'}/></A_Icons.Icons>
                                         <A_Icons.Label>Daftar Jadi Suplier</A_Icons.Label>
                                     </>
                                 </A_Icons>

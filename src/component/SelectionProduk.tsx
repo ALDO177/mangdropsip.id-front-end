@@ -14,8 +14,8 @@ export default class SelectionProduks extends React.Component<any>{
     public render(): React.ReactNode {
         return (
             <Card className="w-100 border-0 mt-3" style={{backgroundColor: 'transparent'}}>
-                <Card.Header className="bg-white border-0 shadow-sm">Produk Lainya</Card.Header>
-                <Card.Body className="mt-2" style={{padding: '0px'}}>
+                <Card.Header className="bg-white border-0 shadow-sm color-mang" style={{fontSize: '14px', fontWeight: '500'}}>Produk Serupa</Card.Header>
+                <Card.Body className="mt-3" style={{padding: '0px'}}>
                     <Row className="row-cols row-cols-md-6 row-cols-5 g-2">
                         {
                             ProduksFromDatabases.map((produks) => (

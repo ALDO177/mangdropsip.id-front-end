@@ -46,7 +46,7 @@ export default class BrandProduk extends React.Component<any>{
                             {
                                 ProduksFromDatabases.map((produks) => (
                                     <SplideSlide key={produks.id}>
-                                        <CardProduk produk_info={ produks } badge={{
+                                        <CardProduk border='rounded-0' produk_info={ produks } badge={{
                                             brand: 
                                             {conditions: true, 
                                             data:{ path : brand_test,

@@ -16,16 +16,16 @@ export default class CardProduk extends React.Component<VariantCardProduk, Varia
     public componentWillUnmount(): void {}
 
     render(): React.ReactNode {
-        const { width, produk_info, badge }  = this.props;
+        const { width, produk_info, badge, border }  = this.props;
         return(
             <Card 
-                className="border-1 shadow-sm" 
+                className={`border-1 ${border}`} 
                 style={{width: width === undefined ? '195px' : width, height: '250px'}}>
                  <div className="position-relative">
                      <Image src={ produk_info?.path } className="w-100" alt=""/>
                      <BadgeInfoProduk badges={ badge }/>
                  </div>
-                <Card.Body className="body-panel-produk">
+                <Card.Body className="body-panel-produk" style={{paddingTop: '8px'}}>
                     <span>{produk_info?.nama}</span>
                     <h4>{produk_info?.price}</h4>
                     <span>Terjual 100</span>

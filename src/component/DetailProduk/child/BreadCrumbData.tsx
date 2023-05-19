@@ -5,7 +5,7 @@ import { Breadcrumb } from 'react-bootstrap';
 export default function BreadcrumbData(){
     return(
         <>
-             <Breadcrumb style={{fontSize: '14px'}}>
+             <Breadcrumb style={{fontSize: '13px'}}>
                 <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
                     <Breadcrumb.Item href="#">
                         Alat Rumah Tangga
